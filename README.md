@@ -72,12 +72,39 @@ The program displays:
 ### Sample Result
 
 ```text
-Accuracy: 100.0%
+================ IRIS DATA REPORT ================
+
+Total Samples: 150
+Features Used: 4
+Classes: 3
+
+Flower Categories:
+- setosa
+- versicolor
+- virginica
+
+=============== MODEL RESULTS ===============
+
+Accuracy: 100.0 %
 
 Confusion Matrix:
-[[10 0 0]
-[0 9 0]
-[0 0 11]]
+[[10  0  0]
+ [ 0  9  0]
+ [ 0  0 11]]
+
+Classification Report:
+
+              precision    recall  f1-score   support
+
+      setosa       1.00      1.00      1.00        10
+  versicolor       1.00      1.00      1.00         9
+   virginica       1.00      1.00      1.00        11
+
+    accuracy                           1.00        30
+   macro avg       1.00      1.00      1.00        30
+weighted avg       1.00      1.00      1.00        30
+
+Project Completed Successfully
 ```
 
 ---
@@ -93,7 +120,7 @@ source venv/bin/activate
 ### Run the Project
 
 ```bash
-python3 Iris.py
+python3 IrisData.py
 ```
 
 ---
